@@ -89,6 +89,7 @@ namespace Mango.Services.ProductAPI.Controllers
         }
 
         [HttpDelete]
+        [Route("{id}")]
         public async Task<ResponseDto> Delete(int id)
         {
             try
